@@ -12,5 +12,8 @@ public interface EmployeeDAO {
     List<Employee> findAll();
     List<Employee> findByEmailContaining(String email);
     void update(Employee employee);
+    void delete(Integer Id);
+
+    int deleteAll();
 
 }

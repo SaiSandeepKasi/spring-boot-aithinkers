@@ -23,15 +23,29 @@ public class DemolearningsApplication {
 			//reademployee(employeeDAO);
 			//queryForEmployess(employeeDAO);
 			//queryforemployeeemail(employeeDAO);
-			updateage(employeeDAO);
+			//updateage(employeeDAO);
+			//deleteemployeeById(employeeDAO);
+			//deleteAllemp(employeeDAO);
 		};
+	}
+
+	private void deleteAllemp(EmployeeDAO employeeDAO) {
+		System.out.println("Deleting all allemployees Records");
+		Integer DeletedCount = employeeDAO.deleteAll();
+		System.out.println("Deleted Records " + DeletedCount + " Count");
+	}
+
+	private void deleteemployeeById(EmployeeDAO employeeDAO) {
+		int id=5;
+		System.out.println("Deleting employee with id "+id);
+		employeeDAO.delete(id);
 	}
 
 	private void updateage(EmployeeDAO employeeDAO) {
 		//get employee based on Id
 		int employeeId=2;
 		Employee employee = employeeDAO.findById(employeeId);
-		//change the gender
+		//change the age
 		employee.setAge(24);
 		//update the Employee
 		employeeDAO.update(employee);

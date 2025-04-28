@@ -53,4 +53,18 @@ public class Employeedaoimp implements EmployeeDAO {
     public void update(Employee employee) {
         em.merge(employee);
     }
+
+    @Override
+    @Transactional
+    public void delete(Integer Id) {
+      Employee emp = em.find(Employee.class,Id);
+      em.remove(emp);
+    }
+
+    @Override
+    @Transactional
+    public int deleteAll() {
+        int deletedrows=em.createQuery("Delete from Employee").executeUpdate();
+        return deletedrows;
+    }
 }
