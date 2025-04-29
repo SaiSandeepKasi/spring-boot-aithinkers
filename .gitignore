@@ -1,8 +1,13 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
+<<<<<<< HEAD
 !**/src/main/**/target/
 !**/src/test/**/target/
+=======
+!src/main/java/CRUDAPIs/src/main/**/target/
+!src/main/java/CRUDAPIs/src/test/**/target/
+>>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
 
 ### STS ###
 .apt_generated
@@ -26,8 +31,13 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+<<<<<<< HEAD
 !**/src/main/**/build/
 !**/src/test/**/build/
+=======
+!src/main/java/CRUDAPIs/src/main/**/build/
+!src/main/java/CRUDAPIs/src/test/**/build/
+>>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
 
 ### VS Code ###
 .vscode/
