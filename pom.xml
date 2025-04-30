@@ -8,17 +8,10 @@
 		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-<<<<<<< HEAD
 	<groupId>com.springboot-Rest</groupId>
 	<artifactId>Rest-crud-APIS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Rest-crud-APIS</name>
-=======
-	<groupId>com.springboot</groupId>
-	<artifactId>demolearnings</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>demolearnings</name>
->>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -36,17 +29,20 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-<<<<<<< HEAD
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -54,41 +50,25 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-=======
-
-		<dependency>
->>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
+
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-=======
->>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
 	</dependencies>
-=======
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-    </dependencies>
->>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
-
 	<build>
 		<plugins>
 			<plugin>
-<<<<<<< HEAD
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -111,12 +91,7 @@
 						</exclude>
 					</excludes>
 				</configuration>
-=======
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
->>>>>>> b57baa51920a3c9bd66656d03202afd2a372b550
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
